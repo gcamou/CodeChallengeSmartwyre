@@ -1,0 +1,58 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+          "name": ".NET Core Launch (web)",
+          "type": "coreclr",
+          "request": "launch",
+          "preLaunchTask": "buildapi",
+          "program": "${workspaceFolder}/Smartwyre.DeveloperTest.Runner/bin/Debug/net7.0/Smartwyre.DeveloperTest.Runner.dll",
+          "args": [],
+          "cwd": "${workspaceFolder}/Smartwyre.DeveloperTest.Runner",
+          "stopAtEntry": false,
+          "internalConsoleOptions": "openOnSessionStart",
+          "launchBrowser": {
+            "enabled": true,
+            "args": "${auto-detect-url}",
+            "windows": {
+              "command": "cmd.exe",
+              "args": "/C start ${auto-detect-url}"
+            },
+            "osx": {
+              "command": "open",
+              "args": "-a /Applications/FireFox.app ${auto-detect-url}"
+            },
+            "linux": {
+              "command": "xdg-open"
+            }
+          },
+          "env": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+          },
+          "sourceFileMap": {
+            "/Views": "${workspaceFolder}/Views"
+          }
+        },
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Smartwyre.DeveloperTest.Api/bin/Debug/net7.0/Smartwyre.DeveloperTest.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Smartwyre.DeveloperTest.Api",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
